@@ -1290,7 +1290,7 @@ a:hover {
 .wrapper {
   width: 100%;
   margin: 0;
-  overflow: none;
+  overflow: hidden;
 }
 
 @media (min-width: 64em) {
@@ -1377,16 +1377,42 @@ a:hover {
   padding-bottom: 3.125em;
 }
 
+@media screen and (max-width: 767px) {
+  .mod-amenities .row {
+    padding-bottom: 1.875em;
+  }
+}
+
 .mod-contact {
   margin: 5em 0 0 0;
+}
+
+@media screen and (max-width: 767px) {
+  .mod-contact {
+    margin: 2.5em 0 0 0;
+  }
 }
 
 .mod-contact .mod-section-title {
   padding: 0 0 0 3.125em;
 }
 
+@media screen and (max-width: 767px) {
+  .mod-contact .mod-section-title {
+    padding: 0 1.25em;
+  }
+}
+
 .mod-contact h3 {
   margin-bottom: 1.25em;
+}
+
+@media screen and (max-width: 767px) {
+  .mod-contact .map {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 .mod-footer {
@@ -1945,6 +1971,12 @@ img.demo.w3-opacity.w3-hover-opacity-off {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  img.demo.w3-opacity.w3-hover-opacity-off {
+    height: 100px;
+  }
 }
 
 img.mySlides {
@@ -3283,6 +3315,12 @@ img.mySlides {
   padding: 3.75em;
 }
 
+@media screen and (max-width: 767px) {
+  .mod-section-title {
+    padding: 1.25em;
+  }
+}
+
 .mod-section-title.--spaced {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -3363,6 +3401,13 @@ img.mySlides {
           align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .com-amenitie {
+    width: 50%;
+    margin: 0.9375em 0;
+  }
+}
+
 .com-amenitie .com-icon-amenitie {
   background-color: #fff;
   padding: 3.125em;
@@ -3373,7 +3418,7 @@ img.mySlides {
 
 @media screen and (max-width: 1023px) {
   .com-amenitie .com-icon-amenitie {
-    padding: 25px;
+    padding: 50px;
   }
 }
 
@@ -3596,6 +3641,9 @@ img.mySlides {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   /* Slider */
 }
 
@@ -3613,6 +3661,12 @@ img.mySlides {
   font-weight: 600;
 }
 
+@media screen and (max-width: 767px) {
+  .com-title.--s {
+    margin-bottom: 0.625em;
+  }
+}
+
 .com-title.--s:after {
   content: '';
   display: inline-block;
@@ -3626,6 +3680,12 @@ img.mySlides {
   text-align: left;
 }
 
+@media screen and (max-width: 767px) {
+  .com-title.--s:after {
+    width: 7em;
+  }
+}
+
 .com-title.--s.--white {
   color: #FFF;
 }
@@ -3637,12 +3697,25 @@ img.mySlides {
   margin-left: 0.7em;
 }
 
+@media screen and (max-width: 767px) {
+  .com-title.--s.--white:after {
+    margin-left: 0;
+  }
+}
+
 .com-title.--m {
   font-size: 2.8125rem;
   line-height: 3.25rem;
   font-family: "Poppins", sans-serif;
   color: #000;
   font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .com-title.--m {
+    font-size: 2.1875rem;
+    line-height: 2.625rem;
+  }
 }
 
 .com-title.--m-2 {
@@ -3657,6 +3730,12 @@ img.mySlides {
   text-align: right;
 }
 
+@media screen and (max-width: 767px) {
+  .com-title.--m-2.--right {
+    text-align: left;
+  }
+}
+
 .com-title.--l {
   font-size: 5rem;
   font-family: "Poppins", sans-serif;
@@ -3666,7 +3745,8 @@ img.mySlides {
 
 @media screen and (max-width: 1023px) {
   .com-title.--l {
-    font-size: 3.75rem;
+    font-size: 3.125rem;
+    line-height: 3.5625rem;
   }
 }
 /*# sourceMappingURL=site.css.map */

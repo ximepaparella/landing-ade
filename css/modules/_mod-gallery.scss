@@ -527,6 +527,9 @@ img.demo.w3-opacity.w3-hover-opacity-off {
     overflow: hidden;
     object-fit: cover;
     width: 100%;
+    @media screen and (max-width:767px) {
+        height:100px;
+    }
 }
 
 img.mySlides {

@@ -8,6 +8,9 @@
 
     .row {
         justify-content: space-evenly;
-        padding-bottom:$px-50
+        padding-bottom:$px-50;
+        @media screen and (max-width:767px) {
+            padding-bottom:$px-30;
+        }
     }
 }
