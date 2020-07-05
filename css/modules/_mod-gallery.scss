@@ -1,6 +1,10 @@
 .mod-gallery {
     margin:$px-30 0 $px-100 0;
+    @media screen and (max-width:1023px) {
+        margin:$px-30 0 $px-40 0;
+    }
 }
+
 .w3-table,
 .w3-table-all {
     border-collapse: collapse;

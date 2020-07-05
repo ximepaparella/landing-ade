@@ -1,6 +1,9 @@
 .mod-footer {
     border-top:1px solid $black;
     padding:$px-20 0;
+    @media screen and (max-width:1023px) {
+        text-align: center;
+    }
 
     .row {
         align-items: center;
@@ -8,6 +11,10 @@
 
     .flex-end {
         text-align: right;
+        @media screen and (max-width:1023px) {
+            text-align: center;
+            margin:$px-40 0;
+        }
     }
 
     .com-info {

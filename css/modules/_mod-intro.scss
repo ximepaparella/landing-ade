@@ -1,8 +1,15 @@
 .mod-intro {
     margin: $px-80 0;
     display: flex;
+    @media screen and (max-width:1023px) {
+        margin:$px-40 0;
+    }
+    
     .text {
         padding:0 $px-20 0 $px-70;
+        @media screen and (max-width:1023px) {
+            padding:$px-20;
+        }
 
         .com-title.--s{
             margin-bottom: $px-20;
