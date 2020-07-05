@@ -1,0 +1,31 @@
+.com-form {
+    display:flex;
+    flex-direction: column;
+    margin:$px-20 0;
+
+    fieldset {
+        margin:$px-10 0;
+    }
+
+    label {
+        font-family: $font-default;
+        font-size:$px-14;
+        padding-bottom:$px-5;
+    }
+
+    .com-input, .com-textarea {
+        border:1px solid $grey;
+        border-radius:$px-4;
+        width:100%;
+    }
+
+    .com-input {
+        height:$px-40;
+    }
+
+    .com-textarea { 
+        height:$px-100;
+        font-family: 'Raleway';
+        padding:$px-10;
+    }
+}

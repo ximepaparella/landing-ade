@@ -100,30 +100,50 @@
 
         <!-- Amenities -->
         <section class="mod-amenities com-bg --grey">
-            <div class="row mod-section-title">
-                <h3> Amenities </h3>
-                <h2> Características del proyecto </h2>
+            <div class="row mod-section-title --spaced">
+                <h3 class="com-title --s"> Amenities </h3>
+                <h2 class="com-title --m-2 --right"> Características del proyecto </h2>
             </div>
-            <div class="row-gap-4 com-amenitie">
-                <i class="icon-facebook"> </i>
-            </div>
-            <div class="row-gap-4 com-amenitie">
-                <i class="icon-facebook"> </i>
-            </div>
-            <div class="row-gap-4 com-amenitie">
-                <i class="icon-facebook"> </i>
-            </div>
-            <div class="row-gap-4 com-amenitie">
-                <i class="icon-facebook"> </i>
+            <div class="row">
+                <div class="com-amenitie">
+                    <div class="com-icon-amenitie">
+                        <img src="images/amenities/gym.svg" />
+                    </div>
+                    <p>Plaza aérobica</p>
+                </div>
+                <div class="com-amenitie">
+                    <div class="com-icon-amenitie">
+                        <img src="images/amenities/security.svg" />
+                    </div>
+                    <p>Seguridad 24hs</p>
+                </div>
+                <div class="com-amenitie">
+                    <div class="com-icon-amenitie">
+                        <img src="images/amenities/shop.svg" />
+                    </div>
+                    <p>Centro comercial</p>
+                </div>
+                <div class="com-amenitie">
+                    <div class="com-icon-amenitie">
+                        <img src="images/amenities/car.svg" />
+                    </div>
+                    <p>155 cocheras</p>
+                </div>
+                <div class="com-amenitie">
+                    <div class="com-icon-amenitie">
+                        <img src="images/amenities/quality.svg" />
+                    </div>
+                    <p>Excelente calidad constructiva</p>
+                </div>
             </div>
         </section>
         <!-- Amenities -->
 
         <!-- Gallery -->
         <section class="mod-gallery">
-            <div class="row mod-section-title">
-                <h3> Galería </h3>
-                <h2> Fotos y Videos </h2>
+            <div class="row mod-section-title --spaced">
+                <h3 class="com-title --s"> Galería </h3>
+                <h2 class="com-title --m-2 --right"> Fotos y Videos</h2>
             </div>
             <div class="com-gallery">
 
@@ -137,13 +157,34 @@
                 <div class="col-desksm-6 col-12">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3292.3604405733126!2d-58.664924384775944!3d-34.39218338051475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca13bf4407d7d%3A0x7a428c9670842bc5!2sAv.%20Agust%C3%ADn%20M.%20Garc%C3%ADa%209501%2C%20Benavidez%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1593955011168!5m2!1ses-419!2sar"
-                        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                        width="100%" height="550" frameborder="0" style="border:0;" allowfullscreen=""
                         aria-hidden="false" tabindex="0"></iframe>
                 </div>
                 <div class="col-desksm-6 col-12">
                     <div class="row mod-section-title">
-                        <h3> Contacto </h3>
-                        <h2> Escribinos para más información </h2>
+                        <h3 class="com-title --s"> Contacto </h3>
+                        <h2 class="com-title --m --black"> Escribinos para más información </h2>
+                        <form class="com-form">
+                            <fieldset>
+                                <label>Nombre y Apellido</label>
+                                <input class="com-input" type="text" name="nombre" id="nombre" />
+                            </fieldset>
+                            <fieldset>
+                                <label>E-mail</label>
+                                <input class="com-input" type="email" name="email" id="email" />
+                            </fieldset>
+                            <fieldset>
+                                <label>Celular:</label>
+                                <input class="com-input" type="text" name="celular" id="celular" />
+                            </fieldset>
+                            <fieldset>
+                                <label>Mensaje:</label>
+                                <textarea class="com-textarea" type="text" name="celular" id="celular" >Hola! quisiera que me envien la información.</textarea>
+                            </fieldset>
+                            <fieldset>
+                                <input class="com-button" type="submit" name="enviar" value="Enviar" />
+                            </fieldset>
+                        </form>
                     </div>
                     <div class="com-form">
 

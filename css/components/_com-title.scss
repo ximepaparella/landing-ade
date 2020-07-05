@@ -1,10 +1,10 @@
 .com-title {
-    
+
     &.--s {
-        font-size:$font-17;
+        font-size: $font-17;
         line-height: $line-17;
         font-family: $font-default;
-        color:$black;
+        color: $black;
         font-weight: 600;
 
         &:after {
@@ -14,18 +14,18 @@
             width: 11em;
             margin-left: 2em;
             height: 1px;
-            background-color:$black;
+            background-color: $black;
             flex-shrink: 10000;
             text-align: left;
         }
 
 
         &.--white {
-            color:$white;
+            color: $white;
 
             &:after {
                 content: '';
-                background-color:$white;
+                background-color: $white;
                 width: 4em;
                 margin-left: 0.7em;
             }
@@ -34,22 +34,34 @@
     }
 
     &.--m {
-        font-size:$font-45;
+        font-size: $font-45;
         line-height: $line-45;
         font-family: $font-titles;
-        color:$black;
+        color: $black;
         font-weight: bold;
-    } 
+    }
+
+    &.--m-2 {
+        font-size: $font-35;
+        line-height: $line-35;
+        font-family: $font-titles;
+        color: $black;
+        font-weight: bold;
+
+        &.--right {
+            text-align: right;
+        }
+    }
 
     &.--l {
-        font-size:$font-80;
+        font-size: $font-80;
         font-family: $font-titles;
         line-height: $line-80;
-        color:$white;
+        color: $white;
 
         .mod-slider & {
             max-width: 50%;
-            margin-bottom:$px-5;
+            margin-bottom: $px-5;
         }
     }
 }

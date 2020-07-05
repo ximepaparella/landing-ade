@@ -1,0 +1,25 @@
+.com-amenitie {
+    width: 16%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .com-icon-amenitie{    
+        background-color: #fff;
+        padding: $px-50;
+        border-radius: $px-100;
+        width: 75%;
+        margin-bottom:$px-15;
+    }
+
+    img {
+        width:40px;
+        text-align:center;
+    }
+
+    p {
+        text-align:center;
+        font-size: $font-15;
+    }
+}

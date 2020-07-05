@@ -1347,6 +1347,36 @@ a:hover {
 }
 
 /********** MODULES **********/
+.mod-amenities {
+  margin: 5em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mod-amenities .row {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 3.125em;
+}
+
+.mod-contact {
+  margin: 5em 0;
+}
+
+.mod-contact .mod-section-title {
+  padding: 0 0 0 3.125em;
+}
+
+.mod-contact h3 {
+  margin-bottom: 1.25em;
+}
+
 .mod-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1403,6 +1433,23 @@ a:hover {
   margin-left: 0.625em;
 }
 
+.mod-section-title {
+  padding: 3.75em;
+}
+
+.mod-section-title.--spaced {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mod-section-title.--no-padding {
+  padding: 0;
+}
+
 .mod-slider {
   margin: 0 0 2.5em 0;
   display: -webkit-box;
@@ -1436,16 +1483,92 @@ a:hover {
 }
 
 /********** COMPONENTS **********/
-.com-bg {
-  padding: 6.25em 4.0625em;
+.com-amenitie {
+  width: 16%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.com-amenitie .com-icon-amenitie {
+  background-color: #fff;
+  padding: 3.125em;
+  border-radius: 6.25em;
+  width: 75%;
+  margin-bottom: 0.9375em;
+}
+
+.com-amenitie img {
+  width: 40px;
+  text-align: center;
+}
+
+.com-amenitie p {
+  text-align: center;
+  font-size: 0.9375rem;
 }
 
 .com-bg.--grey {
   background-color: #f7f7f7;
 }
 
-.com-bg.--white {
-  background-color: #FFF;
+.com-button {
+  background-color: #000;
+  color: #FFF;
+  padding: 10px 20px;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+}
+
+.com-button:hover {
+  opacity: 0.8;
+}
+
+.com-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1.25em 0;
+}
+
+.com-form fieldset {
+  margin: 0.625em 0;
+}
+
+.com-form label {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.875em;
+  padding-bottom: 0.3125em;
+}
+
+.com-form .com-input, .com-form .com-textarea {
+  border: 1px solid #818181;
+  border-radius: 0.25em;
+  width: 100%;
+}
+
+.com-form .com-input {
+  height: 2.5em;
+}
+
+.com-form .com-textarea {
+  height: 6.25em;
+  font-family: 'Raleway';
+  padding: 0.625em;
 }
 
 .com-icon {
@@ -1628,6 +1751,18 @@ a:hover {
   font-family: "Poppins", sans-serif;
   color: #000;
   font-weight: bold;
+}
+
+.com-title.--m-2 {
+  font-size: 2.1875rem;
+  line-height: 2.625rem;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  font-weight: bold;
+}
+
+.com-title.--m-2.--right {
+  text-align: right;
 }
 
 .com-title.--l {

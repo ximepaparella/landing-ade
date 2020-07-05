@@ -1,0 +1,10 @@
+.mod-amenities {
+    margin: $px-80 0;
+    display: flex;
+    flex-direction: column;
+
+    .row {
+        justify-content: space-evenly;
+        padding-bottom:$px-50
+    }
+}

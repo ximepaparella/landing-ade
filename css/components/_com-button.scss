@@ -1,0 +1,11 @@
+.com-button {
+    background-color: $black;
+    color:$white;
+    padding: 10px 20px;
+    font-family: $font-default;
+    text-transform: uppercase;
+
+    &:hover {
+        opacity:0.8;
+    }
+}

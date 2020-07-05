@@ -1,0 +1,13 @@
+.mod-section-title {
+    padding: $px-60;
+
+    &.--spaced {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    &.--no-padding {
+        padding:0;
+
+    }
+}
