@@ -1,0 +1,13 @@
+.com-text-icon {
+    display: flex;
+    flex-direction: row;
+
+    /* Slider */
+    .mod-slider & {
+        .com-icon {
+            margin-left:$px-30;
+            position:relative;
+            top:-$px-3;
+        }
+    }
+}

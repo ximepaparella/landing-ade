@@ -1,7 +1,32 @@
 .com-icon {
-    font-size:$font-20;
+    font-size:$font-12;
 
     &.--black {
         color:$black;
+
+        &.--border {
+            border:1px solid $black;
+        }
+    }
+    &.--white {
+        color:$white;
+
+        &.--border {
+            border:2px solid $white;
+        }
+    }
+
+    &.--border {
+        border-radius:$px-50;
+        padding: 8px;
+            i {
+                font-size:$font-12;
+                position:relative;
+            }
+    }
+
+    &:hover {
+        opacity:0.8;
     }
 }
+

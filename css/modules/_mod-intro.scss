@@ -1,0 +1,39 @@
+.mod-intro {
+    margin: $px-80 0;
+    display: flex;
+    .text {
+        padding:0 $px-20 0 $px-70;
+
+        .com-title.--s{
+            margin-bottom: $px-20;
+        }
+        .com-title.--m{
+            margin-bottom: $px-10;
+        }
+    }
+
+    .image {
+        position:relative;
+        img {
+            width:100%;
+        }
+
+        .com-link-boxed {
+            position: absolute;
+            background-color:$white;
+            bottom: 0;
+            padding: $px-25 $px-30;
+            right: 0;
+
+            a {
+                font-weight: bold;
+                color:$black;
+                font-size: $font-14;
+            }
+
+            i {
+                margin-left:$px-10;
+            }
+        }
+    }
+}

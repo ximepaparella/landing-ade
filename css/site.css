@@ -155,6 +155,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  opacity: 0.8;
+}
+
 #wrap {
   position: relative;
 }
@@ -1354,15 +1358,81 @@ a {
   padding: 15px 0;
 }
 
+.mod-intro {
+  margin: 5em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mod-intro .text {
+  padding: 0 1.25em 0 4.375em;
+}
+
+.mod-intro .text .com-title.--s {
+  margin-bottom: 1.25em;
+}
+
+.mod-intro .text .com-title.--m {
+  margin-bottom: 0.625em;
+}
+
+.mod-intro .image {
+  position: relative;
+}
+
+.mod-intro .image img {
+  width: 100%;
+}
+
+.mod-intro .image .com-link-boxed {
+  position: absolute;
+  background-color: #FFF;
+  bottom: 0;
+  padding: 1.5625em 1.875em;
+  right: 0;
+}
+
+.mod-intro .image .com-link-boxed a {
+  font-weight: bold;
+  color: #000;
+  font-size: 0.875rem;
+}
+
+.mod-intro .image .com-link-boxed i {
+  margin-left: 0.625em;
+}
+
 .mod-slider {
   margin: 0 0 2.5em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .mod-slider.bg-slide-1 {
   background-image: url("../../images/slides/slide-1.jpg");
   background-size: cover;
   background-position: center center;
-  min-height: 500px;
+  min-height: 550px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mod-slider .slider__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 2.5em;
 }
 
 /********** COMPONENTS **********/
@@ -1379,11 +1449,37 @@ a {
 }
 
 .com-icon {
-  font-size: 1.25rem;
+  font-size: 0.75rem;
 }
 
 .com-icon.--black {
   color: #000;
+}
+
+.com-icon.--black.--border {
+  border: 1px solid #000;
+}
+
+.com-icon.--white {
+  color: #FFF;
+}
+
+.com-icon.--white.--border {
+  border: 2px solid #FFF;
+}
+
+.com-icon.--border {
+  border-radius: 3.125em;
+  padding: 8px;
+}
+
+.com-icon.--border i {
+  font-size: 0.75rem;
+  position: relative;
+}
+
+.com-icon:hover {
+  opacity: 0.8;
 }
 
 .com-info {
@@ -1402,6 +1498,10 @@ a {
           align-items: center;
 }
 
+.com-link {
+  /* Header */
+}
+
 .com-link.--black {
   color: #000;
 }
@@ -1418,6 +1518,22 @@ a {
   color: #000;
 }
 
+.com-link.--mail {
+  margin-left: 1.875em;
+  position: relative;
+  top: 3px;
+}
+
+.com-link.--whatsapp {
+  font-weight: 600;
+}
+
+.com-link.--whatsapp i {
+  margin-right: 0.625em;
+  position: relative;
+  top: 3px;
+}
+
 .com-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1432,11 +1548,17 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 1.25em;
+  font-size: 1.875rem;
+  color: #000;
+  position: relative;
+  top: 5px;
 }
 
 .com-paragraph {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
+  line-height: 1.4375rem;
 }
 
 .com-paragraph.--grey {
@@ -1451,14 +1573,32 @@ a {
   color: #FFF;
 }
 
-.com-title .--s {
-  font-size: 1.125rem;
-  line-height: 1.5625rem;
-  font-family: "Raleway", sans-serif;
-  color: #000;
+.com-text-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  /* Slider */
 }
 
-.com-title .--s:before {
+.mod-slider .com-text-icon .com-icon {
+  margin-left: 1.875em;
+  position: relative;
+  top: -0.1875em;
+}
+
+.com-title.--s {
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  color: #000;
+  font-weight: 600;
+}
+
+.com-title.--s:after {
   content: '';
   display: inline-block;
   vertical-align: middle;
@@ -1471,17 +1611,34 @@ a {
   text-align: left;
 }
 
-.com-title .--m {
-  font-size: 3.5rem;
-  line-height: 3.9375rem;
-  font-family: "Poppins", sans-serif;
-  color: #000;
+.com-title.--s.--white {
+  color: #FFF;
 }
 
-.com-title .--l {
+.com-title.--s.--white:after {
+  content: '';
+  background-color: #FFF;
+  width: 4em;
+  margin-left: 0.7em;
+}
+
+.com-title.--m {
+  font-size: 2.8125rem;
+  line-height: 3.25rem;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  font-weight: bold;
+}
+
+.com-title.--l {
   font-size: 5rem;
   font-family: "Poppins", sans-serif;
   line-height: 5.4375rem;
   color: #FFF;
+}
+
+.mod-slider .com-title.--l {
+  max-width: 50%;
+  margin-bottom: 0.3125em;
 }
 /*# sourceMappingURL=site.css.map */

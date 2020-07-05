@@ -1,16 +1,35 @@
 .com-link {
     &.--black {
-        color:$black;
+        color: $black;
+
         &:hover {
-            color:$grey;
+            color: $grey;
         }
     }
 
     &.--grey {
-        color:$grey;
+        color: $grey;
 
         &:hover {
-            color:$black;
+            color: $black;
+        }
+    }
+
+    
+    /* Header */
+
+    &.--mail {
+        margin-left: $px-30;
+        position: relative;
+        top: 3px;
+    }
+
+    &.--whatsapp {
+        font-weight: 600;
+        i {
+            margin-right: $px-10;
+            position:relative;
+            top:3px;
         }
     }
 }
