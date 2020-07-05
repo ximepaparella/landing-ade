@@ -1,0 +1,9 @@
+.mod-slider {
+    margin:0 0 $px-40 0;
+    &.bg-slide-1 {
+        background-image:url('../../images/slides/slide-1.jpg');
+        background-size: cover;
+        background-position: center center;
+        min-height: 500px;
+    }
+}

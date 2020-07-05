@@ -20,17 +20,19 @@
 @import 'modules/mod-header';
 @import 'modules/mod-intro';
 @import 'modules/mod-section-title';
+@import 'modules/mod-slider';
 
  
 /********** COMPONENTS **********/
+@import 'components/com-amenitie';
 @import 'components/com-bg'; 
 @import 'components/com-form'; 
 @import 'components/com-icon'; 
+@import 'components/com-info'; 
 @import 'components/com-link'; 
 @import 'components/com-logo';
+@import 'components/com-menu';
 @import 'components/com-nav';
 @import 'components/com-paragraph'; 
-@import 'components/com-title';
-@import 'components/com-amenitie';
 @import 'components/com-social';
-
+@import 'components/com-title';

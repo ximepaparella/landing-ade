@@ -9,7 +9,8 @@
 
 @media ($media-l) {
     .wrapper {
-        min-width: 1120px;
+        width: 1200px;
+        margin: auto;
     }
     
     .container-sidebar {
