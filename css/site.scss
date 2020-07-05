@@ -1,0 +1,36 @@
+/********** ABSTRACTS **********/
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+/********** BASE **********/
+@import 'base/reset';
+@import 'base/helpers';
+@import 'base/icon-fonts';
+
+/********** LAYOUTS **********/
+@import 'layouts/grid';
+@import 'layouts/layout'; 
+
+
+/********** MODULES **********/
+@import 'modules/mod-amenities';
+@import 'modules/mod-contact';
+@import 'modules/mod-footer';
+@import 'modules/mod-gallery';
+@import 'modules/mod-header';
+@import 'modules/mod-intro';
+@import 'modules/mod-section-title';
+
+ 
+/********** COMPONENTS **********/
+@import 'components/com-bg'; 
+@import 'components/com-form'; 
+@import 'components/com-icon'; 
+@import 'components/com-link'; 
+@import 'components/com-logo';
+@import 'components/com-nav';
+@import 'components/com-paragraph'; 
+@import 'components/com-title';
+@import 'components/com-amenitie';
+@import 'components/com-social';
+

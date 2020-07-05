@@ -1,0 +1,14 @@
+.com-paragraph {
+    font-family: $font-default;
+    font-size:$font-16;
+
+    &.--grey {
+        color:$grey;
+    }
+    &.--black {
+        color:$black;
+    }
+    &.--white {
+        color:$white;
+    }
+}

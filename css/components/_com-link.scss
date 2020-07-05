@@ -1,0 +1,16 @@
+.com-link {
+    &.--black {
+        color:$black;
+        &:hover {
+            color:$grey;
+        }
+    }
+
+    &.--grey {
+        color:$grey;
+
+        &:hover {
+            color:$black;
+        }
+    }
+}

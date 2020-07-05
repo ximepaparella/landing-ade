@@ -1,0 +1,35 @@
+.com-title {
+    
+    .--s {
+        font-size:$font-18;
+        line-height: $line-18;
+        font-family: $font-default;
+        color:$black;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            width: 11em;
+            margin-left: 2em;
+            height: 1px;
+            background-color:$black;
+            flex-shrink: 10000;
+            text-align: left;
+        }
+    }
+
+    .--m {
+        font-size:$font-56;
+        line-height: $line-56;
+        font-family: $font-titles;
+        color:$black;
+    } 
+
+    .--l {
+        font-size:$font-80;
+        font-family: $font-titles;
+        line-height: $line-80;
+        color:$white;
+    }
+}
