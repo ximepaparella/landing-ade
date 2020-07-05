@@ -48,9 +48,10 @@
                 </div>
                 <div class="col-9 com-info">
                     <a class="com-link --black --whatsapp"
-                        href="https://api.whatsapp.com/send?phone=+5491144444444&text=Hola%20quisiera%20m%C3%A1s%20informaci%C3%B3n." target="_blank"><i
-                            class="icon-whatsapp"></i>+54 9 11 4444 4444</a>
-                    <a class="com-link --grey --mail" href="mailto:comercial@eidico.com.ar" target="_blank">comercial@eidico.com.ar</a>
+                        href="https://api.whatsapp.com/send?phone=+5491144444444&text=Hola%20quisiera%20m%C3%A1s%20informaci%C3%B3n."
+                        target="_blank"><i class="icon-whatsapp"></i>+54 9 11 4444 4444</a>
+                    <a class="com-link --grey --mail" href="mailto:comercial@eidico.com.ar"
+                        target="_blank">comercial@eidico.com.ar</a>
 
                     <div class="com-menu">
                         <a href="#"> <i class="icon-menu"></i></a>
@@ -80,7 +81,8 @@
             <div class="col-12 col-desksm-6 text">
                 <h3 class="com-title --s">Info del Proyecto</h3>
                 <h2 class="com-title --m">Cómo Eidico desarrolló Altos del Encuentro</h2>
-                <p class="com-paragraph --grey">Altos del Encuentro es un complejo residencial de 88 casas y dúplex de 3 ambientes, desarrollado por
+                <p class="com-paragraph --grey">Altos del Encuentro es un complejo residencial de 88 casas y dúplex de 3
+                    ambientes, desarrollado por
                     Eidico en 2018. Está ubicado en Pacheco, próximo al barrio El Encuentro -desarrollado por Eidico en
                     2003-. Fue lanzado a un valor muy competitivo respecto del mercado. Cada unidad cuenta con ambientes
                     de amplias dimensiones, jardines y/o terrazas diseñados para el disfrute cotidiano.</p>
@@ -91,7 +93,7 @@
                     <div class="com-link-boxed">
                         <a href="#">Contactanos <i class="com-icon --border --black icon-next-solid"></i></a>
                     </div>
-                    
+
                 </div>
 
             </div>
@@ -146,9 +148,55 @@
                 <h2 class="com-title --m-2 --right"> Fotos y Videos</h2>
             </div>
             <div class="com-gallery">
+                <div class="w3-content" style="max-width:1200px">
+                    <img class="mySlides" src="images/gallery/gallery-1.jpg" style="display:none">
+                    <img class="mySlides" src="images/gallery/gallery-2.jpg" >
+                    <img class="mySlides" src="images/gallery/gallery-3.jpg" style="display:none">
 
+                    <div class="w3-row-padding w3-section">
+                        <div class="w3-col s4">
+                            <img class="demo w3-opacity w3-hover-opacity-off" src="images/gallery/gallery-1.jpg"
+                                style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+                        </div>
+                        <div class="w3-col s4">
+                            <img class="demo w3-opacity w3-hover-opacity-off" src="images/gallery/gallery-2.jpg"
+                                style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+                        </div>
+                        <div class="w3-col s4">
+                            <img class="demo w3-opacity w3-hover-opacity-off" src="images/gallery/gallery-3.jpg"
+                                style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <script>
+            function currentDiv(n) {
+                showDivs(slideIndex = n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+                }
+                x[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " w3-opacity-off";
+            }
+        </script>
+
         <!-- Gallery -->
 
         <!-- Contact -->
@@ -179,7 +227,8 @@
                             </fieldset>
                             <fieldset>
                                 <label>Mensaje:</label>
-                                <textarea class="com-textarea" type="text" name="celular" id="celular" >Hola! quisiera que me envien la información.</textarea>
+                                <textarea class="com-textarea" type="text" name="celular"
+                                    id="celular">Hola! quisiera que me envien la información.</textarea>
                             </fieldset>
                             <fieldset>
                                 <input class="com-button" type="submit" name="enviar" value="Enviar" />
@@ -197,22 +246,26 @@
         <!-- Footer -->
         <footer class="mod-footer">
             <div class="row">
-                <div class="col-desksm-4 col-12">
-                    <img src="images/altos-del-encuentro.png" />
+                <div class="col-desksm-2 col-12">
+                    <img src="images/logo-eidico.png" />
                 </div>
-                <div class="col-desksm-4 col-12">
-                    <ul>
+                <div class="col-desksm-8 col-12">
+                    <ul class="com-info">
                         <li><strong>Oficina central:</strong> Av. Agustín García 9501, Benavídez, Buenos Aires</li>
                         <li><strong>Tel:</strong> 7079-3700/3800</li>
                         <li><strong>Horario de atención:</strong> lun. a vie. 8 a 18 hs.</li>
                     </ul>
                 </div>
-                <div class="col-desksm-4 col-12">
+                <div class="col-desksm-2 col-12 flex-end">
                     <div class="com-social">
-                        <a class="com-icon" href="" target="_blank"><i class="icon-facebook"></i></a>
-                        <a class="com-icon" href="" target="_blank"><i class="icon-instagram"></i></a>
-                        <a class="com-icon" href="" target="_blank"><i class="icon-youtube"></i></a>
-                        <a class="com-icon" href="" target="_blank"><i class="icon-blog"></i></a>
+                        <a class="com-icon --border --black" href="" target="_blank" alt="Facebook" title="Facebook"><i
+                                class="icon-facebook"></i></a>
+                        <a class="com-icon --border --black" href="" target="_blank" alt="Instagram"
+                            title="Instagram"><i class="icon-instagram"></i></a>
+                        <a class="com-icon --border --black" href="" target="_blank" alt="Youtube" title="Youtube"><i
+                                class="icon-youtube"></i></a>
+                        <a class="com-icon --border --black" href="" target="_blank" alt="Eidico Blog"
+                            title="Eidico Blog"><i class="icon-blog"></i></a>
                     </div>
                 </div>
             </div>

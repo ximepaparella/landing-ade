@@ -1,0 +1,23 @@
+.mod-footer {
+    border-top:1px solid $black;
+    padding:$px-20 0;
+
+    .row {
+        align-items: center;
+    }
+
+    .flex-end {
+        text-align: right;
+    }
+
+    .com-info {
+        color:$black;
+        text-align: center;
+        flex-direction: column;
+        line-height: $line-18;
+
+        strong {
+            font-weight: 500;
+        }
+    }
+}

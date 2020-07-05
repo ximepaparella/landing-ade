@@ -1,0 +1,18 @@
+.com-social {
+    .com-icon {
+        margin-right:$px-5;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        &.--border {
+            padding:$px-16;
+        }
+
+        &:hover {
+            background-color:$black;
+            color:$white;
+        }
+    }
+}
