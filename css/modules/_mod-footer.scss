@@ -29,3 +29,15 @@
         }
     }
 }
+
+@media screen and (max-width:676px) {
+    .w-100-mob {
+        width: auto;
+        padding: $px-5 $px-20;
+         margin: auto;
+
+         .com-social {
+             margin-top:$px-20;
+         }
+    }
+}

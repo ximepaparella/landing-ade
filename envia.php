@@ -1,5 +1,5 @@
 ﻿<?php
-$remitente = $_POST['email'];
+$remitente = $_POST['mail'];
 $destinatario = 'ximenapaparella@hotmail.com'; // en esta línea va el mail del destinatario.
 $asunto = 'Consulta Landing Altos del encuentro'; // acá se puede modificar el asunto del mail
 if (!$_POST){
@@ -9,7 +9,7 @@ if (!$_POST){
 }else{
 	 
     $cuerpo = "Nombre y apellido: " . $_POST["nombre"] . "\r\n"; 
-    $cuerpo .= "Email: " . $_POST["email"] . "\r\n";
+    $cuerpo .= "E-mail: " . $_POST["mail"] . "\r\n";
     $cuerpo .= "Celular: " . $_POST["celular"] . "\r\n";
 	$cuerpo .= "Consulta: " . $_POST["consulta"] . "\r\n";
 	//las líneas de arriba definen el contenido del mail. Las palabras que están dentro de $_POST[""] deben coincidir con el "name" de cada campo. 
@@ -24,6 +24,6 @@ if (!$_POST){
 
     mail($destinatario, $asunto, $cuerpo, $headers);
     
-    include 'enviado.html'; //se debe crear un html que confirma el envío
+    include 'enviado-ok.html'; //se debe crear un html que confirma el envío
 }
 ?>

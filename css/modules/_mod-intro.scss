@@ -17,6 +17,11 @@
         .com-title.--m{
             margin-bottom: $px-10;
         }
+
+        &.--center {
+            text-align: center;
+            padding:$px-10;
+        }
     }
 
     .image {

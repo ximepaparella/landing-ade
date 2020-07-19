@@ -112,6 +112,10 @@ section {
   display: block;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   line-height: 1;
 }
@@ -1471,6 +1475,17 @@ a:hover {
 
 .mod-footer .com-info strong {
   font-weight: 500;
+}
+
+@media screen and (max-width: 676px) {
+  .w-100-mob {
+    width: auto;
+    padding: 0.3125em 1.25em;
+    margin: auto;
+  }
+  .w-100-mob .com-social {
+    margin-top: 1.25em;
+  }
 }
 
 .mod-gallery {
@@ -3299,6 +3314,11 @@ img.mySlides {
 
 .mod-intro .text .com-title.--m {
   margin-bottom: 0.625em;
+}
+
+.mod-intro .text.--center {
+  text-align: center;
+  padding: 0.625em;
 }
 
 .mod-intro .image {
