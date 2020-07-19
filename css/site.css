@@ -172,6 +172,15 @@ a:hover {
   font-display: block;
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("../../fonts/icomoon2.eot");
+  src: url("../../fonts/icomoon2.eot") format("embedded-opentype"), url("../../fonts/icomoon2.ttf") format("truetype"), url("../../fonts/icomoon2.woff") format("woff"), url("../../fonts/icomoon2.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -265,6 +274,10 @@ a:hover {
 
 .icon-facebook:before {
   content: "\e90d";
+}
+
+.icon-linkedin1:before {
+  content: "\eac9";
 }
 
 /********** LAYOUTS **********/
@@ -1430,6 +1443,9 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .mod-footer .flex-end {
@@ -3334,6 +3350,78 @@ img.mySlides {
   padding: 0;
 }
 
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: white;
+  /* Black fallback color */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  /* 25% from the top */
+  width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
+  margin-top: 30px;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 12px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #000;
+  display: block;
+  /* Display block instead of inline */
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
+  text-transform: uppercase;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  opacity: 0.7;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 30px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-width: 450px) {
+  .overlay a {
+    font-size: 30px;
+  }
+  .overlay .closebtn {
+    font-size: 20px;
+    top: 30px;
+    right: 10px;
+  }
+}
+
 .mod-slider {
   margin: 0 0 2.5em 0;
   display: -webkit-box;
@@ -3536,7 +3624,8 @@ img.mySlides {
 }
 
 @media screen and (max-width: 450px) {
-  .com-info {
+  .com-info a.com-link.--grey.--mail,
+  .com-info a.com-link.--black.--whatsapp {
     display: none;
   }
 }

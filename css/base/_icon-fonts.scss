@@ -9,6 +9,20 @@
     font-style: normal;
     font-display: block;
   }
+
+
+  @font-face {
+    font-family: 'icomoon';
+    src: url('../../fonts/icomoon2.eot');
+    src: url('../../fonts/icomoon2.eot') format('embedded-opentype'),
+      url('../../fonts/icomoon2.ttf') format('truetype'),
+      url('../../fonts/icomoon2.woff') format('woff'),
+      url('../../fonts/icomoon2.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+    
     
   [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
@@ -24,7 +38,8 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
+
+
   .icon-pin:before {
     content: "\e90e";
   }
@@ -42,7 +57,7 @@
   }
   .icon-blog:before {
     content: "\e901";
-  }
+  } 
   .icon-menu:before {
     content: "\e902";
   }
@@ -72,7 +87,8 @@
   }
   .icon-whatsapp:before {
     content: "\e909";
-  }
+  } 
+
   .icon-youtube:before {
     content: "\e90a";
   }
@@ -88,5 +104,9 @@
   
   .icon-facebook:before {
     content: "\e90d";
+  }
+    
+  .icon-linkedin1:before {
+    content: "\eac9";
   }
   

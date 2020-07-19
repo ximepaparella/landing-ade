@@ -7,6 +7,7 @@
 
     .row {
         align-items: center;
+        justify-content: space-between;
     }
 
     .flex-end {
@@ -19,10 +20,10 @@
 
     .com-info {
         color:$black;
-        text-align: center;
+        text-align: center; 
         flex-direction: column;
         line-height: $line-18;
-
+ 
         strong {
             font-weight: 500;
         }
