@@ -4,7 +4,7 @@
     justify-content: flex-end;
     align-items: center;
 
-    @media screen and (max-width:450px) {
+    @media screen and (max-width:767px) {
         a.com-link.--grey.--mail, 
         a.com-link.--black.--whatsapp  {
             display: none;

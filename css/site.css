@@ -3527,6 +3527,7 @@ img.mySlides {
 @media screen and (max-width: 1023px) {
   .com-amenitie .com-icon-amenitie {
     padding: 50px;
+    width: auto;
   }
 }
 
@@ -3643,7 +3644,7 @@ img.mySlides {
           align-items: center;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 767px) {
   .com-info a.com-link.--grey.--mail,
   .com-info a.com-link.--black.--whatsapp {
     display: none;
@@ -3705,6 +3706,14 @@ img.mySlides {
   color: #000;
   position: relative;
   top: 5px;
+}
+
+.com-menu .icon-menu {
+  color: black;
+}
+
+.com-menu .icon-menu:hover, .com-menu .icon-menu:active {
+  color: black;
 }
 
 .com-paragraph {

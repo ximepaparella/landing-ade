@@ -8,4 +8,11 @@
     color:$black;
     position:relative;
     top:5px;
+
+    .icon-menu {
+        color:black;
+        &:hover, &:active {
+            color: black;
+        }
+    }
 }
