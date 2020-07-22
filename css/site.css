@@ -167,6 +167,10 @@ a:hover {
   position: relative;
 }
 
+.mt-30 {
+  margin-top: 30px;
+}
+
 @font-face {
   font-family: 'icomoon';
   src: url("../../fonts/icomoon.eot");
