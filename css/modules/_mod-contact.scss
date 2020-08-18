@@ -16,6 +16,9 @@
     .map {
         @media screen and (max-width:767px) {
             order:2;
+            img {
+                width:100%;
+            }
         }
     }
 }

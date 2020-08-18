@@ -26,10 +26,22 @@
 
     &.--whatsapp {
         font-weight: 600;
+        position: relative;
+        top: 3px;
         i {
             margin-right: $px-10;
             position:relative;
             top:3px;
+            @media screen and (max-width:767px) {
+                font-size:27px;
+             }
         }
+    }
+
+    &.--eidico {
+        position: relative;
+        top: 5px;
+        font-weight: 500;
+        margin-left: 21px;
     }
 }

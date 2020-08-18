@@ -1,0 +1,10 @@
+.com-svg {
+    width: 30px;
+    padding-right: 10px;
+    position: relative;
+    top: 3px;
+    @media screen and (max-width:767px) {
+        width: 40px;
+    }
+}
+

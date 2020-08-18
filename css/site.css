@@ -1434,6 +1434,9 @@ a:hover {
         -ms-flex-order: 2;
             order: 2;
   }
+  .mod-contact .map img {
+    width: 100%;
+  }
 }
 
 .mod-footer {
@@ -3649,8 +3652,8 @@ img.mySlides {
 }
 
 @media screen and (max-width: 767px) {
-  .com-info a.com-link.--grey.--mail,
-  .com-info a.com-link.--black.--whatsapp {
+  .com-info a.com-link.--grey.--mail span,
+  .com-info a.com-link.--black.--whatsapp span {
     display: none;
   }
 }
@@ -3683,12 +3686,27 @@ img.mySlides {
 
 .com-link.--whatsapp {
   font-weight: 600;
+  position: relative;
+  top: 3px;
 }
 
 .com-link.--whatsapp i {
   margin-right: 0.625em;
   position: relative;
   top: 3px;
+}
+
+@media screen and (max-width: 767px) {
+  .com-link.--whatsapp i {
+    font-size: 27px;
+  }
+}
+
+.com-link.--eidico {
+  position: relative;
+  top: 5px;
+  font-weight: 500;
+  margin-left: 21px;
 }
 
 .com-menu {
@@ -3753,6 +3771,19 @@ img.mySlides {
 .com-social .com-icon:hover {
   background-color: #000;
   color: #FFF;
+}
+
+.com-svg {
+  width: 30px;
+  padding-right: 10px;
+  position: relative;
+  top: 3px;
+}
+
+@media screen and (max-width: 767px) {
+  .com-svg {
+    width: 40px;
+  }
 }
 
 .com-text-icon {

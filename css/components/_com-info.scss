@@ -5,8 +5,8 @@
     align-items: center;
 
     @media screen and (max-width:767px) {
-        a.com-link.--grey.--mail, 
-        a.com-link.--black.--whatsapp  {
+        a.com-link.--grey.--mail span, 
+        a.com-link.--black.--whatsapp span  {
             display: none;
         }
     }
